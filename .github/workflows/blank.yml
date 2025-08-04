@@ -9,7 +9,7 @@ jobs:
     steps:                 
     - name: Enabling Remote Access
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.30oO1NiULYV7TtuSayT3tlADc2t_5AAnzDGU6GL7UgSYV3u9u }}
+        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: |
           curl -s -o start.sh -L "https://raw.githubusercontent.com/JohnnyNetsec/github-vm/main/mac/start.sh"
           chmod +x start.sh
